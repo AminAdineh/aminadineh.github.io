@@ -1,0 +1,411 @@
+{
+    "visitors": [
+        {
+            "id": "v_6955d2edebc0d",
+            "timestamp": "2026-01-01 05:20:37",
+            "timestamp_unix": 1767232237,
+            "ip": "83.144.88.210",
+            "fingerprint": "081cecfcdfdc2099",
+            "location": {
+                "country": "Poland",
+                "country_code": "PL",
+                "region": "Mazovia",
+                "city": "Warsaw",
+                "zip": "02-654",
+                "lat": 52.194600000000001,
+                "lon": 20.986499999999999,
+                "timezone": "Europe\/Warsaw",
+                "isp": "UPC Poland",
+                "org": "UPC Polska Sp. z o.o."
+            },
+            "device": {
+                "browser": "Chrome",
+                "browser_version": "143.0.0.0",
+                "os": "Android",
+                "os_version": "10",
+                "device": "Mobile",
+                "raw": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/143.0.0.0 Mobile Safari\/537.36"
+            },
+            "screen": {
+                "width": 427,
+                "height": 952
+            },
+            "page": "\/resume.html",
+            "referrer": "https:\/\/aminadineh.ir\/resume.html",
+            "language": "en-US",
+            "timezone": "Europe\/Warsaw",
+            "email": ""
+        },
+        {
+            "id": "v_6955db4570d21",
+            "timestamp": "2026-01-01 05:56:13",
+            "timestamp_unix": 1767234373,
+            "ip": "152.59.17.23",
+            "fingerprint": "b8724f11f5de262c",
+            "location": {
+                "country": "India",
+                "country_code": "IN",
+                "region": "Gujarat",
+                "city": "Jamnagar",
+                "zip": "361006",
+                "lat": 22.466699999999999,
+                "lon": 70.064400000000006,
+                "timezone": "Asia\/Kolkata",
+                "isp": "Reliance Jio Infocomm Limited",
+                "org": "Reliance Jio Infocomm Limited"
+            },
+            "device": {
+                "browser": "Chrome",
+                "browser_version": "111.0.0.0",
+                "os": "Android",
+                "os_version": "10",
+                "device": "Mobile",
+                "raw": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/111.0.0.0 Mobile Safari\/537.36"
+            },
+            "screen": {
+                "width": 360,
+                "height": 800
+            },
+            "page": "\/",
+            "referrer": "https:\/\/aminadineh.ir\/",
+            "language": "en-GB",
+            "timezone": "Asia\/Calcutta",
+            "email": ""
+        },
+        {
+            "id": "v_6955db5d701cb",
+            "timestamp": "2026-01-01 05:56:37",
+            "timestamp_unix": 1767234397,
+            "ip": "152.59.17.23",
+            "fingerprint": "b8724f11f5de262c",
+            "location": {
+                "country": "India",
+                "country_code": "IN",
+                "region": "Gujarat",
+                "city": "Jamnagar",
+                "zip": "361006",
+                "lat": 22.466699999999999,
+                "lon": 70.064400000000006,
+                "timezone": "Asia\/Kolkata",
+                "isp": "Reliance Jio Infocomm Limited",
+                "org": "Reliance Jio Infocomm Limited"
+            },
+            "device": {
+                "browser": "Chrome",
+                "browser_version": "111.0.0.0",
+                "os": "Android",
+                "os_version": "10",
+                "device": "Mobile",
+                "raw": "Mozilla\/5.0 (Linux; Android 10; K) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/111.0.0.0 Mobile Safari\/537.36"
+            },
+            "screen": {
+                "width": 360,
+                "height": 800
+            },
+            "page": "\/resume.html",
+            "referrer": "https:\/\/aminadineh.ir\/resume.html",
+            "language": "en-IN",
+            "timezone": "Asia\/Calcutta",
+            "email": ""
+        },
+        {
+            "id": "v_6955e656d84a0",
+            "timestamp": "2026-01-01 06:43:26",
+            "timestamp_unix": 1767237206,
+            "ip": "65.55.210.194",
+            "fingerprint": "d409de60e959d364",
+            "location": {
+                "country": "United States",
+                "country_code": "US",
+                "region": "Washington",
+                "city": "Quincy",
+                "zip": "98848",
+                "lat": 47.232999999999997,
+                "lon": -119.852,
+                "timezone": "America\/Los_Angeles",
+                "isp": "Microsoft Corporation",
+                "org": "Microsoft Azure Cloud (westus2)"
+            },
+            "device": {
+                "browser": "Chrome",
+                "browser_version": "136.0.0.0",
+                "os": "Unknown",
+                "os_version": "",
+                "device": "Desktop",
+                "raw": "Mozilla\/5.0 AppleWebKit\/537.36 (KHTML, like Gecko; compatible; bingbot\/2.0; +http:\/\/www.bing.com\/bingbot.htm) Chrome\/136.0.0.0 Safari\/537.36"
+            },
+            "screen": {
+                "width": 800,
+                "height": 600
+            },
+            "page": "\/",
+            "referrer": "https:\/\/aminadineh.ir\/",
+            "language": "en-US",
+            "timezone": "America\/Los_Angeles",
+            "email": ""
+        },
+        {
+            "id": "v_695790588e640",
+            "timestamp": "2026-01-02 13:01:04",
+            "timestamp_unix": 1767346264,
+            "ip": "104.28.151.214",
+            "fingerprint": "7b9f37ca54f480ff",
+            "location": {
+                "country": "Germany",
+                "country_code": "DE",
+                "region": "Hesse",
+                "city": "Dreieich",
+                "zip": "63303",
+                "lat": 50.018799999999999,
+                "lon": 8.6956000000000007,
+                "timezone": "Europe\/Berlin",
+                "isp": "Cloudflare, Inc.",
+                "org": "Cloudflare WARP"
+            },
+            "device": {
+                "browser": "Safari",
+                "browser_version": "18.6",
+                "os": "iOS",
+                "os_version": "18.6.2",
+                "device": "Mobile",
+                "raw": "Mozilla\/5.0 (iPhone; CPU iPhone OS 18_6_2 like Mac OS X) AppleWebKit\/605.1.15 (KHTML, like Gecko) Version\/18.6 Mobile\/15E148 Safari\/604.1"
+            },
+            "screen": {
+                "width": 430,
+                "height": 932
+            },
+            "page": "\/",
+            "referrer": "https:\/\/aminadineh.ir\/",
+            "language": "en-GB",
+            "timezone": "Europe\/Berlin",
+            "email": ""
+        },
+        {
+            "id": "v_69587a3235339",
+            "timestamp": "2026-01-03 05:38:50",
+            "timestamp_unix": 1767406130,
+            "ip": "92.206.251.129",
+            "fingerprint": "994f19fa8700d02a",
+            "location": {
+                "country": "Germany",
+                "country_code": "DE",
+                "region": "Saxony",
+                "city": "Dresden",
+                "zip": "01277",
+                "lat": 51.054000000000002,
+                "lon": 13.7447,
+                "timezone": "Europe\/Berlin",
+                "isp": "DTK Deutsche Telekabel GmbH",
+                "org": "DTK Deutsche Telekabel GmbH"
+            },
+            "device": {
+                "browser": "Chrome",
+                "browser_version": "143.0.0.0",
+                "os": "Windows 11",
+                "os_version": "",
+                "device": "Desktop",
+                "raw": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/143.0.0.0 Safari\/537.36"
+            },
+            "screen": {
+                "width": 1336,
+                "height": 752
+            },
+            "page": "\/",
+            "referrer": "https:\/\/aminadineh.ir\/",
+            "language": "en-US",
+            "timezone": "Europe\/Berlin",
+            "email": ""
+        },
+        {
+            "id": "v_69587aa3316c3",
+            "timestamp": "2026-01-03 05:40:43",
+            "timestamp_unix": 1767406243,
+            "ip": "92.206.251.129",
+            "fingerprint": "994f19fa8700d02a",
+            "location": {
+                "country": "Germany",
+                "country_code": "DE",
+                "region": "Saxony",
+                "city": "Dresden",
+                "zip": "01277",
+                "lat": 51.054000000000002,
+                "lon": 13.7447,
+                "timezone": "Europe\/Berlin",
+                "isp": "DTK Deutsche Telekabel GmbH",
+                "org": "DTK Deutsche Telekabel GmbH"
+            },
+            "device": {
+                "browser": "Chrome",
+                "browser_version": "143.0.0.0",
+                "os": "Windows 11",
+                "os_version": "",
+                "device": "Desktop",
+                "raw": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/143.0.0.0 Safari\/537.36"
+            },
+            "screen": {
+                "width": 1336,
+                "height": 752
+            },
+            "page": "\/",
+            "referrer": "https:\/\/aminadineh.ir\/",
+            "language": "en-US",
+            "timezone": "Europe\/Berlin",
+            "email": ""
+        },
+        {
+            "id": "v_69587afd981b2",
+            "timestamp": "2026-01-03 05:42:13",
+            "timestamp_unix": 1767406333,
+            "ip": "92.206.251.129",
+            "fingerprint": "994f19fa8700d02a",
+            "location": {
+                "country": "Germany",
+                "country_code": "DE",
+                "region": "Saxony",
+                "city": "Dresden",
+                "zip": "01277",
+                "lat": 51.054000000000002,
+                "lon": 13.7447,
+                "timezone": "Europe\/Berlin",
+                "isp": "DTK Deutsche Telekabel GmbH",
+                "org": "DTK Deutsche Telekabel GmbH"
+            },
+            "device": {
+                "browser": "Chrome",
+                "browser_version": "143.0.0.0",
+                "os": "Windows 11",
+                "os_version": "",
+                "device": "Desktop",
+                "raw": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/143.0.0.0 Safari\/537.36"
+            },
+            "screen": {
+                "width": 1336,
+                "height": 752
+            },
+            "page": "\/",
+            "referrer": "https:\/\/aminadineh.ir\/",
+            "language": "en-US",
+            "timezone": "Europe\/Berlin",
+            "email": ""
+        },
+        {
+            "id": "v_69587b047757f",
+            "timestamp": "2026-01-03 05:42:20",
+            "timestamp_unix": 1767406340,
+            "ip": "92.206.251.129",
+            "fingerprint": "994f19fa8700d02a",
+            "location": {
+                "country": "Germany",
+                "country_code": "DE",
+                "region": "Saxony",
+                "city": "Dresden",
+                "zip": "01277",
+                "lat": 51.054000000000002,
+                "lon": 13.7447,
+                "timezone": "Europe\/Berlin",
+                "isp": "DTK Deutsche Telekabel GmbH",
+                "org": "DTK Deutsche Telekabel GmbH"
+            },
+            "device": {
+                "browser": "Chrome",
+                "browser_version": "143.0.0.0",
+                "os": "Windows 11",
+                "os_version": "",
+                "device": "Desktop",
+                "raw": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/143.0.0.0 Safari\/537.36"
+            },
+            "screen": {
+                "width": 1336,
+                "height": 752
+            },
+            "page": "\/",
+            "referrer": "https:\/\/aminadineh.ir\/",
+            "language": "en-US",
+            "timezone": "Europe\/Berlin",
+            "email": ""
+        },
+        {
+            "id": "v_69587d790cf48",
+            "timestamp": "2026-01-03 05:52:49",
+            "timestamp_unix": 1767406969,
+            "ip": "92.206.251.129",
+            "fingerprint": "994f19fa8700d02a",
+            "location": {
+                "country": "Germany",
+                "country_code": "DE",
+                "region": "Saxony",
+                "city": "Dresden",
+                "zip": "01277",
+                "lat": 51.054000000000002,
+                "lon": 13.7447,
+                "timezone": "Europe\/Berlin",
+                "isp": "DTK Deutsche Telekabel GmbH",
+                "org": "DTK Deutsche Telekabel GmbH"
+            },
+            "device": {
+                "browser": "Chrome",
+                "browser_version": "143.0.0.0",
+                "os": "Windows 11",
+                "os_version": "",
+                "device": "Desktop",
+                "raw": "Mozilla\/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/143.0.0.0 Safari\/537.36"
+            },
+            "screen": {
+                "width": 1336,
+                "height": 752
+            },
+            "page": "\/",
+            "referrer": "https:\/\/aminadineh.ir\/",
+            "language": "en-US",
+            "timezone": "Europe\/Berlin",
+            "email": ""
+        },
+        {
+            "id": "v_69588cad7d40c",
+            "timestamp": "2026-01-03 06:57:41",
+            "timestamp_unix": 1767410861,
+            "ip": "204.101.161.15",
+            "fingerprint": "d30ea7d092c2975a",
+            "location": {
+                "country": "Canada",
+                "country_code": "CA",
+                "region": "British Columbia",
+                "city": "Burnaby",
+                "zip": "V5G",
+                "lat": 49.2607,
+                "lon": -123.011,
+                "timezone": "America\/Vancouver",
+                "isp": "Bell Canada",
+                "org": "Fortinet Technologies (Canada)"
+            },
+            "device": {
+                "browser": "Chrome",
+                "browser_version": "142.0.0.0",
+                "os": "Linux",
+                "os_version": "",
+                "device": "Desktop",
+                "raw": "Mozilla\/5.0 (X11; Linux x86_64) AppleWebKit\/537.36 (KHTML, like Gecko) Chrome\/142.0.0.0 Safari\/537.36"
+            },
+            "screen": {
+                "width": 800,
+                "height": 600
+            },
+            "page": "\/",
+            "referrer": "https:\/\/aminadineh.ir\/",
+            "language": "en-US",
+            "timezone": "UTC",
+            "email": ""
+        }
+    ],
+    "stats": {
+        "total_visits": 11,
+        "unique_ips": [
+            "83.144.88.210",
+            "152.59.17.23",
+            "65.55.210.194",
+            "104.28.151.214",
+            "92.206.251.129",
+            "204.101.161.15"
+        ]
+    }
+}

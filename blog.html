@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <title>Blog by Amin Adineh - Quantum Computing, AI, Robotics & Physics Articles | www.aminadineh.ir</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="Read the latest articles and insights by Amin Adineh on Quantum Computing, Robotics, AI, Semiconductor Research, and Applied Physics. Expert analysis and research updates at www.aminadineh.ir" />
+    <meta name="keywords" content="Amin Adineh blog, Amin Adineh articles, quantum computing, robotics, AI, physics, semiconductor research, technology news, aminadineh.ir, Amin Adineh writer" />
+    <meta name="author" content="Amin Adineh" />
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <link rel="canonical" href="https://www.aminadineh.ir/blog.html" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.aminadineh.ir/blog.html" />
+    <meta property="og:title" content="Blog by Amin Adineh - Quantum Computing, AI & Robotics Articles" />
+    <meta property="og:description" content="Latest articles and insights by Amin Adineh on Quantum Computing, Robotics, AI, and Applied Physics" />
+    <meta property="og:site_name" content="Amin Adineh" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.aminadineh.ir/blog.html" />
+    <meta property="twitter:title" content="Blog by Amin Adineh" />
+    <meta property="twitter:description" content="Latest articles on Quantum Computing, AI, Robotics, and Applied Physics by Amin Adineh" />
+    
+    <link rel="shortcut icon" href="favicon.ico">
+    
+    <!-- JSON-LD Structured Data for Blog -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Blog",
+      "name": "Amin Adineh Blog",
+      "description": "Articles and insights on Quantum Computing, AI, Robotics, and Applied Physics by Amin Adineh",
+      "url": "https://www.aminadineh.ir/blog.html",
+      "author": {
+        "@type": "Person",
+        "name": "Amin Adineh",
+        "url": "https://www.aminadineh.ir",
+        "sameAs": [
+          "https://linkedin.com/in/aminadineh",
+          "https://twitter.com/aminadineh"
+        ]
+      },
+      "publisher": {
+        "@type": "Person",
+        "name": "Amin Adineh",
+        "url": "https://www.aminadineh.ir"
+      },
+      "inLanguage": "en-US"
+    }
+    </script>
+
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/animations.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/dlmenu.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/linkedin-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/books-popup.css" type="text/css">
+    
+    <style>
+      /* Dynamic Blog Styles */
+      .blog-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+      
+      .blog-header h1 {
+        margin: 0;
+      }
+      
+      .blog-refresh-btn {
+        background: linear-gradient(135deg, #ff714a 0%, #FF9800 100%);
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        transition: all 0.3s ease;
+      }
+      
+      .blog-refresh-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(255, 113, 74, 0.4);
+      }
+      
+      .blog-refresh-btn.loading i {
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        to { transform: rotate(360deg); }
+      }
+      
+      .blog-filters {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 25px;
+        flex-wrap: wrap;
+      }
+      
+      .blog-filter-btn {
+        padding: 6px 14px;
+        background: white;
+        border: 1px solid #e0e0e0;
+        border-radius: 20px;
+        font-size: 12px;
+        font-weight: 500;
+        color: #555;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+      
+      .blog-filter-btn:hover,
+      .blog-filter-btn.active {
+        background: linear-gradient(135deg, #ff714a 0%, #FF9800 100%);
+        color: white;
+        border-color: transparent;
+      }
+      
+      .blog-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        gap: 20px;
+      }
+      
+      .blog-card-dynamic {
+        background: white;
+        border-radius: 16px;
+        overflow: hidden;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+        transition: all 0.3s ease;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .blog-card-dynamic:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+      }
+      
+      .blog-card-image {
+        height: 160px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        overflow: hidden;
+      }
+      
+      .blog-card-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .blog-card-image .placeholder-icon {
+        font-size: 40px;
+        color: rgba(255, 255, 255, 0.5);
+      }
+      
+      .blog-card-category {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 10px;
+        font-weight: 600;
+        color: #ff714a;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+      }
+      
+      .blog-card-content {
+        padding: 18px;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .blog-card-title {
+        font-size: 15px;
+        font-weight: 600;
+        color: #333;
+        margin: 0 0 10px 0;
+        line-height: 1.4;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      
+      .blog-card-title a {
+        color: inherit;
+        text-decoration: none;
+      }
+      
+      .blog-card-title a:hover {
+        color: #ff714a;
+      }
+      
+      .blog-card-excerpt {
+        font-size: 13px;
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 15px;
+        flex: 1;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+      }
+      
+      .blog-card-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 11px;
+        color: #999;
+        padding-top: 12px;
+        border-top: 1px solid #f0f0f0;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      
+      .blog-card-author {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: #ff714a;
+        font-weight: 500;
+      }
+      
+      .blog-card-author i {
+        color: #ff714a;
+      }
+      
+      .blog-card-source {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      }
+      
+      .blog-card-source i {
+        color: #ff714a;
+      }
+      
+      .blog-card-source a {
+        color: #ff714a;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      
+      .blog-card-source a:hover {
+        text-decoration: underline;
+      }
+      
+      .blog-card-date {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+      }
+      
+      .blog-loading {
+        text-align: center;
+        padding: 60px 20px;
+        color: #888;
+      }
+      
+      .blog-loading i {
+        font-size: 32px;
+        margin-bottom: 15px;
+        animation: spin 1s linear infinite;
+        color: #ff714a;
+      }
+      
+      .blog-empty {
+        text-align: center;
+        padding: 60px 20px;
+        color: #888;
+      }
+      
+      .blog-empty i {
+        font-size: 48px;
+        margin-bottom: 15px;
+        opacity: 0.3;
+      }
+      
+      .auto-update-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 11px;
+        color: #22c55e;
+        background: rgba(34, 197, 94, 0.1);
+        padding: 4px 10px;
+        border-radius: 12px;
+        margin-left: 10px;
+      }
+      
+      .auto-update-badge i {
+        font-size: 8px;
+        animation: pulse 2s infinite;
+      }
+      
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.3; }
+      }
+      
+      /* Category colors */
+      .cat-quantum { background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%); }
+      .cat-robotics { background: linear-gradient(135deg, #14b8a6 0%, #0d9488 100%); }
+      .cat-semiconductor { background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%); }
+      .cat-electronics { background: linear-gradient(135deg, #ec4899 0%, #be185d 100%); }
+      .cat-ai { background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%); }
+      .cat-personal { background: linear-gradient(135deg, #ff714a 0%, #FF9800 100%); }
+    </style>
+  </head>
+
+  <body>
+
+    <div class="lm-animated-bg"></div>
+    
+    <!-- Page Wrapper -->
+    <div class="page-wrapper bg-move-effect">
+      <div class="page-content site-content">
+
+        <!-- Site Header -->
+        <header id="site_header" class="header">
+          <div class="header-content">
+            <div class="menu-button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="header-titles">
+              <a href="index.html">
+                <h2>AA</h2>
+              </a>
+            </div>
+          </div>
+          
+          <!-- Site Main Menu & Profile Card -->
+          <div class="site-menu profile-card-on flex-v-align dl-menuwrapper">
+            <div class="profile-card flex-v-align">
+              <div class="profile-card-block">
+                <div class="profile-img">
+                  <a href="index.html">
+                    <img src="img/AminA.jpg" alt="Amin Adineh Profile Photo">
+                  </a>
+                </div>
+                <a href="index.html">
+                  <h3 class="site-title">Amin Adineh</h3>
+                </a>
+                <h5 class="site-subtitle">Applied Physics Professional</h5>
+                <div class="social-links">
+                  <ul>
+                    <li><a href="https://linkedin.com/in/aminadineh" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/aminadineh" target="_blank"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://wa.me/4917697729455" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                    <li><a href="https://github.com/aminadineh95" target="_blank"><i class="fab fa-github"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Main Menu -->
+            <ul class="amin-classic-menu main-menu dl-menu dl-menuopen">
+              <li class="menu-item"><a href="index.html">About Me</a></li>
+              <li class="menu-item"><a href="resume.html">Resume</a></li>
+              <li class="menu-item"><a href="portfolio.html">Projects</a></li>
+              <li class="menu-item"><a href="notes.html">My Diary</a></li>
+              <li class="menu-item current-menu-item"><a href="blog.html">Blog</a></li>
+              <li class="menu-item"><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </header>
+
+        <!-- Right Sidebar -->
+        <div class="r-sidebar">
+          <div class="sidebar-button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        
+        <div id="blog-sidebar" class="blog-sidebar">
+          <div class="blog-sidebar-content clearfix">
+            <div class="sidebar-item">
+              <div class="sidebar-title">
+                <h4>Recent Posts</h4>
+              </div>
+              <ul id="sidebar_notifications">
+                <li class="loading">Latest updates will appear here.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Page Content -->
+        <div class="content-area single-page-area" data-animation="animated-section-rotateRoomBottomIn">
+          <div class="single-page-content">
+            <div class="content-wrapper">
+              
+              <div class="blog-header">
+                <div>
+                  <h1 class="page-title" style="margin-bottom: 5px;">Blog</h1>
+                  <span class="auto-update-badge"><i class="fas fa-circle"></i> Auto-updating</span>
+                </div>
+                <button class="blog-refresh-btn" id="refresh-blog" onclick="refreshBlog()">
+                  <i class="fas fa-sync-alt"></i> Refresh
+                </button>
+              </div>
+
+              <div class="blog-filters" id="blog-filters">
+                <button class="blog-filter-btn active" data-category="all">All</button>
+                <button class="blog-filter-btn" data-category="Semiconductor">Semiconductors</button>
+                <button class="blog-filter-btn" data-category="Robotics">Robotics</button>
+                <button class="blog-filter-btn" data-category="Quantum">Quantum</button>
+                <button class="blog-filter-btn" data-category="Electronics">Electronics</button>
+                <button class="blog-filter-btn" data-category="Personal">My Posts</button>
+              </div>
+
+              <div class="blog-grid" id="blog-grid">
+                <div class="blog-loading">
+                  <i class="fas fa-spinner"></i>
+                  <p>Loading latest tech news...</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <footer class="site-footer clearfix">
+            <div class="footer-social">
+              <ul class="footer-social-links">
+                <li><a href="https://linkedin.com/in/aminadineh" target="_blank">LinkedIn</a></li>
+                <li><a href="https://twitter.com/aminadineh" target="_blank">Twitter</a></li>
+                <li><a href="https://wa.me/4917697729455" target="_blank">WhatsApp</a></li>
+                <li><a href="https://github.com/aminadineh95" target="_blank">GitHub</a></li>
+              </ul>
+            </div>
+            <div class="footer-copyrights">
+              <p>© 2025 Amin Adineh. All rights reserved.</p>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src='js/jquery.shuffle.min.js'></script>
+    <script src='js/masonry.pkgd.min.js'></script>
+    <script src='js/owl.carousel.min.js'></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    <script src="js/validator.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/linkedin-popup.js"></script>
+    <script src="js/books-popup.js"></script>
+    
+    <script>
+      // Blog data store
+      let blogPosts = [];
+      let currentFilter = 'all';
+      
+      // Category to CSS class mapping
+      function getCategoryClass(category) {
+        const cat = (category || '').toLowerCase();
+        if (cat.includes('quantum')) return 'cat-quantum';
+        if (cat.includes('robot')) return 'cat-robotics';
+        if (cat.includes('semiconductor')) return 'cat-semiconductor';
+        if (cat.includes('electronic')) return 'cat-electronics';
+        if (cat.includes('ai') || cat.includes('artificial')) return 'cat-ai';
+        return 'cat-personal';
+      }
+      
+      // Format date
+      function formatDate(dateStr) {
+        if (!dateStr) return '';
+        const date = new Date(dateStr);
+        const now = new Date();
+        const diff = now - date;
+        
+        if (diff < 3600000) return Math.floor(diff / 60000) + 'm ago';
+        if (diff < 86400000) return Math.floor(diff / 3600000) + 'h ago';
+        if (diff < 604800000) return Math.floor(diff / 86400000) + 'd ago';
+        
+        return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric' });
+      }
+      
+      // Render blog posts
+      function renderPosts(posts, filter) {
+        const grid = document.getElementById('blog-grid');
+        
+        let filtered = posts;
+        if (filter && filter !== 'all') {
+          filtered = posts.filter(post => {
+            const cat = (post.category || '').toLowerCase();
+            const src = (post.source || '').toLowerCase();
+            const filterLower = filter.toLowerCase();
+            return cat.includes(filterLower) || 
+                   src.includes(filterLower) ||
+                   (filterLower === 'quantum' && (cat.includes('quantum') || cat.includes('physics'))) ||
+                   (filterLower === 'robotics' && (cat.includes('robot') || cat.includes('ai'))) ||
+                   (filterLower === 'personal' && post.is_custom);
+          });
+        }
+        
+        if (filtered.length === 0) {
+          grid.innerHTML = `
+            <div class="blog-empty" style="grid-column: 1/-1;">
+              <i class="fas fa-newspaper"></i>
+              <p>No posts found in this category</p>
+            </div>
+          `;
+          return;
+        }
+        
+        let html = '';
+        filtered.forEach((post, index) => {
+          const catClass = getCategoryClass(post.category);
+          const postUrl = post.link || '#';
+          
+          html += `
+            <div class="blog-card-dynamic">
+              <div class="blog-card-image ${catClass}">
+                ${post.image 
+                  ? `<img src="${post.image}" alt="${escapeHtml(post.title)}" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><i class="placeholder-icon fas fa-microchip" style="display:none;"></i>`
+                  : `<i class="placeholder-icon fas fa-${getCategoryIcon(post.category)}"></i>`
+                }
+                <span class="blog-card-category">${escapeHtml(post.category || 'Tech')}</span>
+              </div>
+              <div class="blog-card-content">
+                <h3 class="blog-card-title">
+                  <a href="${postUrl}" target="_blank" rel="noopener">${escapeHtml(post.title)}</a>
+                </h3>
+                <p class="blog-card-excerpt">${escapeHtml(post.description || '')}</p>
+                <div class="blog-card-meta">
+                  <span class="blog-card-source">
+                    <i class="fas fa-rss"></i> ${escapeHtml(post.source || 'News')}
+                  </span>
+                  <span class="blog-card-date">
+                    <i class="far fa-clock"></i> ${formatDate(post.date)}
+                  </span>
+                </div>
+              </div>
+            </div>
+          `;
+        });
+        
+        grid.innerHTML = html;
+      }
+      
+      // Get icon for category
+      function getCategoryIcon(category) {
+        const cat = (category || '').toLowerCase();
+        if (cat.includes('semiconductor')) return 'microchip';
+        if (cat.includes('robot')) return 'robot';
+        if (cat.includes('quantum')) return 'atom';
+        if (cat.includes('electronic')) return 'bolt';
+        if (cat.includes('ai')) return 'brain';
+        return 'newspaper';
+      }
+      
+      // Escape HTML
+      function escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+      
+      // Fetch blog posts with performance optimization
+      let fetchCache = null;
+      let fetchTime = 0;
+      const CACHE_DURATION = 300000; // 5 minutes client-side cache
+      
+      async function fetchBlogPosts(forceRefresh = false) {
+        const grid = document.getElementById('blog-grid');
+        
+        // Check if grid exists
+        if (!grid) {
+          console.warn('Blog grid element not found');
+          return;
+        }
+        
+        // Use cached data if available and fresh (unless force refresh)
+        if (!forceRefresh && fetchCache && (Date.now() - fetchTime) < CACHE_DURATION) {
+          blogPosts = fetchCache;
+          renderPosts(blogPosts, currentFilter);
+          return;
+        }
+        
+        grid.innerHTML = `
+          <div class="blog-loading" style="grid-column: 1/-1;">
+            <i class="fas fa-spinner"></i>
+            <p>Loading latest tech news...</p>
+          </div>
+        `;
+        
+        try {
+          // Use AbortController for timeout - very short 5 seconds
+          const controller = new AbortController();
+          const timeoutId = setTimeout(() => controller.abort(), 5000); // 5s timeout max
+          
+          const response = await fetch('contact_form/blog_fetcher.php?action=fetch', {
+            signal: controller.signal,
+            cache: 'default',
+            method: 'GET'
+          });
+          
+          clearTimeout(timeoutId);
+          
+          if (!response || !response.ok) {
+            throw new Error('Network error');
+          }
+          
+          const data = await response.json().catch(() => {
+            throw new Error('Invalid JSON response');
+          });
+          
+          if (data.success && data.posts) {
+            blogPosts = data.posts;
+            fetchCache = blogPosts;
+            fetchTime = Date.now();
+            renderPosts(blogPosts, currentFilter);
+          } else {
+            throw new Error('Failed to load posts');
+          }
+        } catch (err) {
+          if (err.name === 'AbortError') {
+            console.warn('Blog fetch timeout');
+          } else {
+            console.error('Blog fetch error:', err);
+          }
+          
+          // Show cached data if available, otherwise show empty state
+          if (fetchCache && Array.isArray(fetchCache) && fetchCache.length > 0) {
+            blogPosts = fetchCache;
+            renderPosts(blogPosts, currentFilter);
+          } else {
+            // Show simple empty state - no retry to prevent loops
+            grid.innerHTML = `
+              <div class="blog-empty" style="grid-column: 1/-1;">
+                <i class="fas fa-newspaper"></i>
+                <p>No posts available at the moment.</p>
+                <p style="font-size: 12px; color: #999; margin-top: 10px;">Check back later or refresh the page.</p>
+              </div>
+            `;
+          }
+        }
+      }
+      
+      // Refresh blog
+      async function refreshBlog() {
+        const btn = document.getElementById('refresh-blog');
+        btn.classList.add('loading');
+        
+        try {
+          await fetch('contact_form/blog_fetcher.php?action=refresh');
+          await fetchBlogPosts();
+        } finally {
+          btn.classList.remove('loading');
+        }
+      }
+      
+      // Filter click handler
+      document.getElementById('blog-filters').addEventListener('click', function(e) {
+        if (!e.target.classList.contains('blog-filter-btn')) return;
+        
+        document.querySelectorAll('.blog-filter-btn').forEach(btn => btn.classList.remove('active'));
+        e.target.classList.add('active');
+        
+        currentFilter = e.target.dataset.category;
+        renderPosts(blogPosts, currentFilter);
+      });
+      
+      // Load posts on page load - simple and safe
+      let blogInitialized = false;
+      
+      function initBlog() {
+        if (blogInitialized) return; // Prevent multiple initializations
+        blogInitialized = true;
+        
+        const grid = document.getElementById('blog-grid');
+        if (grid && !blogPosts.length) {
+          fetchBlogPosts();
+        }
+      }
+      
+      // Simple initialization - only once
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initBlog);
+      } else {
+        setTimeout(initBlog, 100); // Small delay to ensure DOM is ready
+      }
+      
+      // Auto-refresh every 30 minutes (only if tab is visible)
+      let refreshInterval;
+      document.addEventListener('visibilitychange', function() {
+        if (document.hidden) {
+          if (refreshInterval) clearInterval(refreshInterval);
+        } else {
+          refreshInterval = setInterval(fetchBlogPosts, 30 * 60 * 1000);
+        }
+      });
+      
+      // Start interval if page is visible
+      if (!document.hidden) {
+        refreshInterval = setInterval(fetchBlogPosts, 30 * 60 * 1000);
+      }
+      
+      // Lazy load images when they come into view
+      if ('IntersectionObserver' in window) {
+        const imageObserver = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              if (img.dataset.src) {
+                img.src = img.dataset.src;
+                img.removeAttribute('data-src');
+                observer.unobserve(img);
+              }
+            }
+          });
+        });
+        
+        // Observe images after rendering
+        const originalRender = renderPosts;
+        renderPosts = function(posts, filter) {
+          originalRender(posts, filter);
+          setTimeout(() => {
+            document.querySelectorAll('img[data-src]').forEach(img => {
+              imageObserver.observe(img);
+            });
+          }, 100);
+        };
+      }
+    </script>
+  </body>
+</html>
