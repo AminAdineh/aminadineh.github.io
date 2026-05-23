@@ -119,7 +119,7 @@
 
             var $li = $('<li></li>');
             var $link = $('<a></a>')
-                .attr('href', 'notes.html#diary_timeline')
+                .attr('href', 'index.html')
                 .text(subject);
             $li.append($link);
 
@@ -229,7 +229,7 @@
     // Contact form validator
     $(function () {
 
-        var forms = $('#contact_form, #notes_form');
+        var forms = $('#contact_form');
 
         forms.each(function(){
             var $form = $(this);
@@ -260,11 +260,6 @@
                                 $form[0].reset();
                                 if (typeof grecaptcha !== 'undefined') {
                                     grecaptcha.reset();
-                                }
-                                if ($form.is('#notes_form')) {
-                                    setTimeout(function() {
-                                        refreshDiaryUI(true);
-                                    }, 400);
                                 }
                             }
                         },

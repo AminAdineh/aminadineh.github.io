@@ -1,0 +1,240 @@
+\documentclass[10pt, a4paper]{article}
+
+% --- SPECIAL PREAMBLE PROTOCOL ---
+% Using standard, robust packages to ensure zero compilation issues.
+\usepackage[a4paper, left=0.7in, right=0.7in, top=0.6in, bottom=0.6in]{geometry}
+\usepackage{fontspec}
+\usepackage[english, bidi=basic, provide=*]{babel}
+
+% Load Noto Sans as the main document font (modern, clean, highly readable)
+\babelprovide[import, onchar=ids fonts]{english}
+\babelfont{rm}{Noto Sans}
+
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{amsmath}
+\usepackage{graphicx}
+
+% --- COLOR PALETTE ---
+\definecolor{primarycolor}{RGB}{0, 51, 102} % Elegant Deep Navy
+\definecolor{textcolor}{gray}{0.15}         % Charcoal gray for comfortable reading
+\color{textcolor}
+
+% --- HYPERLINK SETUP ---
+\hypersetup{
+  colorlinks=true,
+  urlcolor=primarycolor,
+  linkcolor=primarycolor
+}
+
+% --- COMPACT LIST SETTINGS (Tweak Spacing Here) ---
+\setlist[itemize]{
+  leftmargin=1.5em,
+  itemsep=2pt,
+  parsep=0pt,
+  topsep=2pt,
+  partopsep=0pt
+}
+
+\setlist[description]{
+  leftmargin=9.5em,
+  labelwidth=9.0em,
+  labelsep=0.5em,
+  itemsep=3pt,
+  parsep=0pt,
+  topsep=2pt
+}
+
+% --- SECTION FORMATTING (Tweak Section Padding Here) ---
+\titleformat{\section}
+  {\large\bfseries\scshape\color{primarycolor}}
+  {}{0em}{}
+  [\color{primarycolor}\titlerule]
+
+\titlespacing*{\section}{0pt}{1.0em}{0.4em}
+
+\begin{document}
+
+% --- HEADER WITH MINIPAGE (Profile Picture & Personal Details) ---
+\begin{minipage}[t]{0.72\textwidth}
+  \vspace{0pt}
+  {\Huge\bfseries\color{primarycolor} Amin Adineh} \\[0.4em]
+  {\large\bfseries\color{primarycolor!80} Applied Physicist \\& Computer Science \& Management} \\[0.8em]
+  \small
+  \begin{tabular}{@{}ll}
+    \textbf{Location:} & Cottbus, Brandenburg, Germany \\
+    \textbf{Phone:}    & +49 176 9772 9455 \\
+    \textbf{Email:}    & \href{mailto:AminAdineh95@gmail.com}{AminAdineh95@gmail.com} \\
+    \textbf{Websites:} & \href{https://aminadineh.github.io/}{aminadineh.github.io} \quad$|$ \quad \href{http://aminadineh.me}{aminadineh.me}
+  \end{tabular}
+\end{minipage}%
+\hfill
+\begin{minipage}[t]{0.24\textwidth}
+  \vspace{0pt}
+  \begin{flushright}
+    \includegraphics[width=2.5cm,height=3.1cm,keepaspectratio]{photo.jpg}
+  \end{flushright}
+\end{minipage}
+
+\vspace{0.8em}
+
+% --- PROFESSIONAL SUMMARY ---
+\section*{Professional Summary}
+Interdisciplinary engineer and applied physicist with two Master’s degrees and experience in AI, robotics, automation, and intelligent systems. Specialized in integrating hardware and software for laboratory equipment, robotic platforms, and industrial automation solutions. Experienced in machine learning, LLM training and integration, optimization algorithms, and developing scalable software systems that improve automation, operational efficiency, and user experience. Strong background in semiconductor research, cryogenic systems, and data-driven engineering, with a focus on building practical, energy-efficient, and high-performance solutions that connect physics, AI, and robotics.
+
+
+% --- EXPERIENCE ---
+\section*{Experience}
+
+\textbf{Brandenburg University of Technology Cottbus-Senftenberg} \hfill \textit{Oct 2023 -- 2026} \\
+\textit{Fachgebiet Wirtschaftsinformatik und Business Analytics (Information Systems \& Business Analytics), Germany}
+
+\begin{itemize}
+  \item \textbf{Research Assistant – Integration and Embodied AI into Robotic Systems} \hfill \textit{Oct 2025 -- Sep 2026}
+\begin{itemize}[leftmargin=1.2em, itemsep=1.5pt]
+    \item Designed a discrete-event simulation for Robotic Mobile Fulfillment Systems (RMFS), inspired by MiniRawsim, to analyze warehouse-scale robotic operations and logistics workflows.
+    
+    \item Applied Operations Research and optimization techniques to improve task allocation, path planning, resource management, and operational efficiency in automated logistics environments.
+    
+    \item Integrated GPU-accelerated LLMs (TinyLlama, Qwen, GPT) into robotic and simulation workflows to support intelligent decision-making and autonomous behavior modeling.
+    
+    \item Developed domain-specific optimization algorithms for item storage, order batching, replenishment batching, pod repositioning, station activation, and robot task coordination.
+    
+    \item Built agentic automation workflows using LangChain and LangGraph to automate management tasks, calendar control, and multi-agent coordination.
+    
+    \item Developed an executive GUI for monitoring robot console dialogs and behavioral data, enabling structured analysis of humanoid robot interactions and system performance.
+\end{itemize}
+
+  \item \textbf{Research Assistant – Optimization} \hfill \textit{Mar 2026 -- Aug 2026}
+  \begin{itemize}[leftmargin=1.2em, itemsep=1.5pt]
+    \item Trained in optimization methods and algorithms for real-world problem solving.
+    \item Developed LP, IP, and MILP formulations, including Big-M modeling.
+    \item Applied LP relaxation, bounds, Branch-and-Bound, heuristics, metaheuristics, and decomposition techniques.
+    \item Focused on deriving feasible and globally optimal solutions for complex systems.
+  \end{itemize}
+
+  \item \textbf{Exhibition Presenter – AI Systems (Humanoid Robotics)} \hfill \textit{2025 -- Present}
+  \begin{itemize}[leftmargin=1.2em, itemsep=1.5pt]
+    \item Presented humanoid robotics systems, including Ameca (AMI Desktop), at public technology events across Germany.
+    \item Demonstrated AI-driven robotics, human--robot interaction, and LLM integration at events including Zukunftstag Brandenburg, Potsdamer Tag der Wissenschaften, and Dresden MINT Festival.
+    \item Supported live demonstrations, technical setup, and audience engagement with researchers, students, and industry professionals.
+  \end{itemize}
+\end{itemize}
+
+\vspace{0.4em}
+
+\textbf{IHP – Leibniz Institute for High Performance Microelectronics} \hfill \textit{Sep 2024 -- Nov 2025} \\
+\textit{Frankfurt (Oder), Germany}
+
+\begin{itemize}
+  \item \textbf{Master Thesis – Quantum Transport Research} \hfill \textit{Sep 2025 -- Nov 2025}
+  \begin{itemize}[leftmargin=1.2em]
+    \item Temperature-dependent magnetotransport characterization ($1.5\text{ mK}$ to $10\text{ mK}$).
+  \end{itemize}
+
+  \item \textbf{Research Project – AI \& Cryogenic Data Analysis} \hfill \textit{Mar 2025 -- Aug 2025}
+  \begin{itemize}[leftmargin=1.2em, itemsep=1.5pt]
+    \item Developed Python-based analysis pipeline for cryogenic measurements.
+    \item Built real-time visualization for Hall and gate sweep experiments.
+    \item Extracted Hall parameters ($n$, $\mu$).
+    \item Automated QHE data analysis and reporting.
+    \item Applied AI embeddings for pattern recognition.
+  \end{itemize}
+
+  \item \textbf{Internship – Hardware--Software Integration} \hfill \textit{Sep 2024 -- Mar 2025}
+  \begin{itemize}[leftmargin=1.2em]
+    \item Integrated cryostat APIs using Python and NI LabVIEW (VI).
+    \item Worked with Oxford Teslatron PT and L-Type Rapid systems.
+    \item Conducted data acquisition in near-zero Kelvin environments.
+  \end{itemize}
+\end{itemize}
+
+\vspace{0.4em}
+
+\textbf{Full-Stack Developer – E-Learning Systems} \hfill \textit{Mar 2019 -- Sep 2022} \\
+\textit{ScholarAcademy}
+\begin{itemize}
+  \item Developed automated e-learning platforms with API integration and webhooks.
+  \item Built full-stack applications using CMS and React.
+  \item Designed scalable content delivery systems.
+\end{itemize}
+
+% --- EDUCATION ---
+\section*{Education}
+
+\textbf{Master of Science in Applied Physics} \hfill \textit{2025} \\
+\textit{Brandenburg University of Technology Cottbus-Senftenberg}
+\begin{itemize}[label={}]
+  \item \textbf{Thesis:} Temperature-Dependent Magnetotransport Characterization of Si/SiGe-Based Field Effect Stacks.
+  \item \textbf{Research Interests:} Quantum Transport, Semiconductor Physics, Machine Learning Integration, Scientific Automation.
+  \item \textbf{Relevant Courses:} Solid State Theory, Thermodynamics, Nanoelectronics, Renewable Energy, Semiconductor Technology, Characterization of Micro- and Nanomaterials, Light and Matter: Interaction in Nanostructures, Advanced Laboratory Techniques and Metrology, Optimization in Business Transformations.
+  \item \textbf{Independent Study:} Basic knowledge of laboratory-based and synchrotron X-ray diffraction (XRD) techniques and material characterization methods for rechargeable batteries.
+\end{itemize}
+
+\vspace{0.4em}
+
+\textbf{Advanced Coursework in Optimization and Operations Research}
+\begin{itemize}[label={}]
+  \item Weekly assignments on mathematical optimization methods: modeling with LP, IP, and MILP.
+  \item Exact algorithms: Branch-and-Bound, Dynamic Programming, decomposition techniques.
+  \item LP relaxation, primal-dual bounds, optimality gaps, combinatorial optimization.
+\end{itemize}
+
+\vspace{0.4em}
+
+\textbf{Business Management in Energy Sector (BME)} \hfill \textit{2019 -- 2022} \\
+\textit{Payame Noor University}
+\begin{itemize}[label={}]
+  \item \textbf{Thesis:} Examining the Impact of Green Logistics Performance and Company Infrastructure on Environment and Trade in Services, emphasizing Organizational Performance and Service Quality in Mihan Company.
+  \item \textbf{Relevant Courses:} Organizational Behavior, Economics for Managers, Marketing Principles, Strategic Management, Green Logistics, Renewable Energy Technologies.
+\end{itemize}
+
+\vspace{0.4em}
+
+\textbf{Bachelor of Science in Applied Physics} \hfill \textit{2015 -- 2020} \\
+\textit{Arak University}
+\begin{itemize}[label={}]
+  \item \textbf{Relevant Courses:} XRD, Optics, Electromagnetism, Quantum Mechanics, Analytical Mechanics, Experimental Physics.
+\end{itemize}
+
+% --- SKILLS ---
+\section*{Skills}
+\begin{description}
+  \item[AI Development:] LLMs, Generative AI, NLP Pipelines, RAG Systems, LangChain, LangGraph, Tokenization, Word Embeddings (Word2Vec, FastText, Transformer-based embeddings)
+  \item[Robotics:] RMFS Simulation, Humanoid Systems, Human--Robot Interaction, Robot Behavior Analysis
+  \item[Software Eng.:] MERN Stack, FastAPI, REST APIs, WebSockets, GUI Development, AI-based Software Dev.
+  \item[Scientific Comp.:] Python, LabVIEW, Pandas, SciPy, Jupyter
+  \item[Optimization:] LP, IP, MILP, Branch-and-Bound, Dynamic Programming, Heuristics, Metaheuristics, Approximation Algorithms, Network Optimization, Flow Algorithms
+  \item[Core Competencies:] Scientific Automation, Data Analysis, Optimization Modeling, Operations Research
+  \item[Characterization:] Basic knowledge of laboratory-based and synchrotron XRD techniques
+  \item[Tools \& Systems:] Git, Docker, Google Cloud, LaTeX, GPU Computing
+\end{description}
+
+% --- LANGUAGES ---
+\section*{Languages}
+\begin{center}
+  English (C1 – Advanced) \quad$\cdot$\quad German (B2 – Upper Intermediate) \quad$\cdot$\quad Persian/Farsi (Native)
+\end{center}
+
+% --- MOTIVATION LETTER ---
+\newpage
+\section*{Motivation Letter}
+\vspace{1.5em}
+
+To whom it may concern,
+\vspace{1.5em}
+
+My name is Amin Adineh, and I am a 30-year-old researcher with a multidisciplinary academic back-
+ground spanning Applied Physics and Energy Systems Management.I am excited to apply for opportunities in AI, robotic systems, and intelligent automation. With a strong background in applied physics, machine learning, optimization, and software development, I enjoy building practical solutions that connect hardware and software in useful ways.
+My experience includes semiconductor and battery research, synchrotron XRD, cryogenic systems, and robotic systems. I have also worked with humanoid robots such as Ameca by Engineered Arts and developed multiple integrations with it, as well as simulation models for Robotic Mobile Fulfillment Systems to identify optimal solutions across various scenarios., as well as AI-driven automation and workflow optimization. These experiences have helped me develop a hands-on, interdisciplinary approach to solving technical problems.
+What motivates me most is creating systems that are smart, efficient, and easy to use. I am especially interested in environments where innovation, collaboration, and applied research come together.
+I would welcome the opportunity to contribute my skills and enthusiasm to your team. Thank you for your time and consideration.
+
+\vspace{3em}
+Sincerely,  
+\\[1.5em]
+\textbf{Amin Adineh}
+
+\end{document}
